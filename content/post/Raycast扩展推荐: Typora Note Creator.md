@@ -2,7 +2,6 @@
 date: '2026-01-24T20:55:24+08:00'
 draft: false
 title: 'Raycast扩展推荐: Typora Note Creator'
-slug: 'raycast-extension-typora-node-creator'
 summary: '推荐一款我自己发布的Raycast Typora文章创建的扩展，可以实现为每篇笔记创建一个独立的文件夹，在该文件夹中存放该笔记的 Markdown 文件以及它引用的所有素材。可以指定所有笔记的统一存储位置；可选择预设的模板作为内容初始结构；可选择将 Markdown 文件命名为与文件夹同名，或使用固定名称（如 `index.md`）'
 categories:
  - Software

@@ -2,7 +2,6 @@
 title: "Raycast同步iCloud的文件到群晖"
 description: "Raycast同步iCloud的文件到群晖"
 keywords: "Raycast同步iCloud的文件到群晖"
-slug: 'raycast-script-sync-icloud-to-synology'
 date: 2026-01-25T00:13:37+08:00
 lastmod: 2026-01-25T00:13:37+08:00
 

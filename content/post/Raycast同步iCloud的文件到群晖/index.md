@@ -46,25 +46,25 @@ tags:
 
 1. 在MBA上，启动`Synology Drive Client`，并新建双向同步任务
 
-   ![image-20260125002829808](./Raycast同步iCloud的文件到群晖.assets/image-20260125002829808.png)
+   ![image-20260125002829808](assets/image-20260125002829808.png)
 
    
 
 2. 呼出Raycat，输入“script”，点击“Create Script Command”
 
-   ![image-20260125003737355](./Raycast同步iCloud的文件到群晖.assets/image-20260125003737355.png)
+   ![image-20260125003737355](assets/image-20260125003737355.png)
 
    
 
 3. 填写脚本命令的标题和描述后，点击“Create Script”
 
-   ![image-20260125004539838](./Raycast同步iCloud的文件到群晖.assets/image-20260125004539838.png)
+   ![image-20260125004539838](assets/image-20260125004539838.png)
 
    
 
 4. 将脚本保存在个人用户目录中的.raycast/scripts目录中
 
-   ![image-20260125003316217](./Raycast同步iCloud的文件到群晖.assets/image-20260125003316217.png)
+   ![image-20260125003316217](assets/image-20260125003316217.png)
 
    
 
@@ -119,7 +119,7 @@ tags:
 
 6. 保存后，再次呼出Raycast，输入“备份账本到群晖”（实际只需要输入前1、2个字符就行，比如“备”或“备份”）
 
-   ![image-20260125004758083](./Raycast同步iCloud的文件到群晖.assets/image-20260125004758083.png)
+   ![image-20260125004758083](assets/image-20260125004758083.png)
 
 
 

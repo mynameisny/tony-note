@@ -10,7 +10,7 @@ tags:
   - typora
 ---
 
-![image-20260127000514473](./Raycast扩展推荐: Typora Note Creator.assets/image-20260127000514473.png)
+![image-20260127000514473](assets/image-20260127000514473.png)
 
 先放地址：https://www.raycast.com/mynameisny/typora-note-creator
 

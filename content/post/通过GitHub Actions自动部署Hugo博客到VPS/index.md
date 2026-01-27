@@ -80,7 +80,7 @@ docker run -d \
   nginx:latest
 ```
 
-
+<br>
 
 
 
@@ -118,7 +118,7 @@ chmod 600 /root/.ssh/authorized_keys
 ssh -i id_ed25519 root@your-vps-ip
 ```
 
-
+<br>
 
 
 
@@ -179,6 +179,8 @@ jobs:
             public/ \
             ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }}:/home/nginx/html
 ```
+
+<br>
 
 
 

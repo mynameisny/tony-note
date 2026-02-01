@@ -1,8 +1,8 @@
 ---
-title: "关于 Hugo NexT 组织"
+title: "关于我"
 
-date: 2022-06-09T20:12:52+08:00
-lastmod: 2022-06-09T20:12:52+08:00
+date: 2026-02-01T20:12:52+08:00
+lastmod: 2026-02-01T20:12:52+08:00
 
 share: false
 followme: false
@@ -11,19 +11,19 @@ copyright: false
 url: about.html
 ---
 
-`Hugo NexT` 组织是由众多喜爱 `NexT` 主题及风格的世界各地友人共同组建而成，为的就是让这个主题继续在 `Hugo` 引擎中也能得到发扬光大，在此也欢迎你的加入！
+> 写代码，也写笔记。偶尔写点有用的东西，大多数时候只是自我存档。
 
-# 我们的愿景
+我相信：
 
-延续 `NexT` 经典的黑白调搭配，保持简单的易用性及强大的功能。
+- 好的系统来自长期维护
+- 好的生活也是
 
-# 使用反馈
+喜欢记录、喜欢整理、喜欢把生活当成一个长期维护的项目。
 
-- 加入 [GitHub Discussions](https://github.com/hugo-next/hugo-theme-next/discussions) 或 [Gitter](https://gitter.im/hugo-next/community) 在线讨论 :beers:
-- [GitHub Issues](https://github.com/hugo-next/hugo-theme-next/issues/new?labels=Bug&template=bug-report.md) 提交错误报告 :bug:
-- [GitHub Feature](https://github.com/hugo-next/hugo-theme-next/issues/new?labels=Feature+Request&template=feature-request.md) 表新功能的想法 :sparkles:
+这里记录的是我在技术世界和现实世界之间来回切换时留下的痕迹。
 
-> [!INFO]
-> 同时国内用户也可加入 QQ 群交流： 604710815
+更新频率不稳定，但停止更新通常意味着我还活着。
+
+
 
 {{< music url="/music/sky.mp3" name="天空之城" artist="宫崎骏" cover="/music/gongqijun.jpg" autoplay="true" >}}

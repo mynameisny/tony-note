@@ -1,8 +1,8 @@
 ---
-title: "About Hugo NexT Organization"
+title: "About Me"
 
-date: 2025-01-25T18:00:52+08:00
-lastmod: 2025-01-25T18:00:52+08:00
+date: 2026-02-01T20:12:52+08:00
+lastmod: 2026-02-01T20:12:52+08:00
 
 share: false
 followme: false
@@ -11,19 +11,23 @@ copyright: false
 url: about.html
 ---
 
-The `Hugo NexT` organization is jointly established by numerous friends from around the world who are fond of the `NexT` theme and style. The aim is to continue promoting and enhancing this theme within the `Hugo` engine. We warmly welcome you to join us!
+> I write code, and I write notes. Occasionally, I produce something useful.
+>  Most of the time, I’m simply archiving myself.
 
-# Our Vision
+I believe:
 
-Continuing the classic black-and-white color scheme of `NexT`, it maintains simple usability and powerful functionality.
+- Good systems are the result of long-term maintenance
+- So is a good life
 
-# Usage Feedback
+I enjoy documenting and organizing—
+ treating life itself as a long-term project under continuous maintenance.
 
-- Join the online discussions on [GitHub Discussions](https://github.com/hugo-next/hugo-theme-next/discussions) or [Gitter](https://gitter.im/hugo-next/community) :beers:
-- [GitHub Issues](https://github.com/hugo-next/hugo-theme-next/issues/new?labels=Bug&template=bug-report.md) Submit a bug report :bug:
-- [GitHub Feature](https://github.com/hugo-next/hugo-theme-next/issues/new?labels=Feature+Request&template=feature-request.md) to propose new feature ideas :sparkles:
+What you’ll find here are traces left as I move back and forth
+ between the technical world and the real one.
 
-> [!INFO]
-> Chinese's users can also join the QQ group for communication: 604710815
+Updates are irregular,
+ but a long silence usually means I’m still alive.
+
+
 
 {{< music url="/music/sky.mp3" name="City of the Sky" artist="Hayao Miyazaki" cover="/music/gongqijun.jpg" autoplay="true" >}}

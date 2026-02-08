@@ -87,9 +87,9 @@ tags:
 
 ```
 
+<br>
 
-
-------
+<br>
 
 
 
@@ -119,7 +119,7 @@ hugo new post/"使用Hugo来记录博客"
 1. 路径“post/”不能少，创建成功后的文章会放在”content/post”目录中
 2. 当标题中有空格或符号的时候需要使用双引号
 
-------
+
 
 
 
@@ -140,12 +140,6 @@ hugo new post/"使用Hugo来记录博客"
 本地先通过`hugo server -D`验证没问题之后，再将Hugo博客的代码提交到GitHub，自动触发GitHub Actions将构建好的Hugo静态文件同步到VPS中的Nginx Web目录。
 
 参见：<a href="https://note.ningyu.me/post/%E9%80%9A%E8%BF%87github-actions%E8%87%AA%E5%8A%A8%E9%83%A8%E7%BD%B2hugo%E5%8D%9A%E5%AE%A2%E5%88%B0vps/#more">通过GitHub Actions自动部署Hugo博客到VPS - 熟人介绍的</a>
-
-
-
-
-
-------
 
 
 

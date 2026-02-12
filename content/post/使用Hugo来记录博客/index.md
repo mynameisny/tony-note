@@ -1,6 +1,6 @@
 ---
 title: "使用Hugo来记录博客"
-summary: "本文主要记录我使用Hugo搭建博客的过程和注意事项"
+summary: "本文主要记录我使用Hugo搭建博客的过程和注意事项。"
 keywords: "使用Hugo来记录博客"
 
 date: 2026-01-28T01:18:54+08:00
@@ -39,6 +39,18 @@ tags:
 # Support Math Formulas render, options: mathjax, katex
 #math: mathjax
 ---
+
+## Typora配置
+
+我习惯用Typora作为Markdown编辑器，先设置将图片保存当前文章的目录下的`assets`目录中，并勾选“优先使用相对路径”和“为相对路径添加./”
+
+![image-20260208230500835](./assets/image-20260208230500835.png)
+
+<br>
+
+<br>
+
+
 
 ## 预定义模板
 
@@ -119,18 +131,6 @@ hugo new post/"使用Hugo来记录博客"
 
 1. 路径“post/”不能少，创建成功后的文章会放在”content/post”目录中
 2. 当标题中有空格或符号的时候需要使用双引号
-
-<br>
-
-<br>
-
-
-
-## Typora配置
-
-我习惯用Typora作为Markdown编辑器，先设置将图片保存当前文章的目录下的`assets`目录中，并勾选“优先使用相对路径”
-
-![image-20260208230500835](./assets/image-20260208230500835.png)
 
 <br>
 

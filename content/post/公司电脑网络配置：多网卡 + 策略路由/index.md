@@ -154,7 +154,7 @@ tags:
        > 🔍 如何查接口索引？
        >
        > ```cmd
-       > route print
+       > route print  #或用route print 4（强制Ipv4）
        > ```
        >
        > 找到“接口列表”中以太网对应的数字（比如 15）

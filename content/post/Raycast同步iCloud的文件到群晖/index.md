@@ -42,31 +42,33 @@ tags:
 
 群晖的“文件服务”中自带有“rsyc”功能，但是需要需要将SSH加密端暴露出去，顾及安全问题，最终还是放弃了这个方案。转而思考能不能用我自己的MacBook电脑作为受信的终端，通过它来触发备份，因为这台电脑上有群晖的Drive同步任务常驻的。iPhone等其它Apple设备都通过iCloud来保持文件同步，然后在需要备份时，通过MBA上的`rsync`将文件同步到群晖的同步盘。
 
+<br>
+
 实现步骤：
 
 1. 在MBA上，启动`Synology Drive Client`，并新建双向同步任务
 
    ![image-20260125002829808](assets/image-20260125002829808.png)
 
-   
+   <br>
 
 2. 呼出Raycat，输入“script”，点击“Create Script Command”
 
    ![image-20260125003737355](assets/image-20260125003737355.png)
 
-   
+   <br>
 
 3. 填写脚本命令的标题和描述后，点击“Create Script”
 
    ![image-20260125004539838](assets/image-20260125004539838.png)
 
-   
+   <br>
 
 4. 将脚本保存在个人用户目录中的.raycast/scripts目录中
 
    ![image-20260125003316217](assets/image-20260125003316217.png)
 
-   
+   <br>
 
 5. 填入下面的脚本内容，只需要修改`SOURCE`变量为iCloud云盘中来源文件的路径（右键选中iCloud云盘中的源目录，按住`Option`键，选中“将XX拷贝为路径名称”）、`DEST`变量为群晖同步任务的目标文件的路径
 
@@ -115,13 +117,15 @@ tags:
    echo "✅ 财务文件夹已成功备份到 SynologyDrive！"
    ```
 
-   
+   <br>
 
 6. 保存后，再次呼出Raycast，输入“备份账本到群晖”（实际只需要输入前1、2个字符就行，比如“备”或“备份”）
 
    ![image-20260125004758083](assets/image-20260125004758083.png)
 
+<br>
 
+<br>
 
 附：在 macOS 上，`rsync`通常**已经预装**，因为它是 Unix-like 系统中常用的文件同步工具，可以通过`rsync --version`查看版本，如果太旧了，可以通过`Homebrew`安装新版:
 

@@ -59,9 +59,9 @@ VPS：
     └── conf.d
           └── default.conf
     			└── ssl
-    						└── dhparam.pem
-    						└── ningyu.key
-    						└── hparam.pem
+            └── dhparam.pem
+            └── ningyu.key
+            └── hparam.pem
 ```
 
 

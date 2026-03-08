@@ -1,5 +1,5 @@
 ---
-title: "MacOS"
+title: "Raycast"
 description: "新置设备：5G CPE 锟鹏C2000 Max"
 keywords: "新置设备：5G CPE 锟鹏C2000 Max"
 
@@ -7,7 +7,7 @@ date: 2026-02-07T23:39:45+08:00
 lastmod: 2026-02-07T23:39:45+08:00
 
 categories:
- -
+ - 软件
 tags:
   -
   -

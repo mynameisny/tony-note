@@ -202,18 +202,13 @@ menus:
       weight: 2
     - identifier: software-mac
       name: MAC软件
-      pageRef: /software/
+      pageRef: /tags/MAC
       weight: 1
       parent: software
     - identifier: software-win
       name: Windows软件
-      pageRef: /post/10-math-formula
+      pageRef: /tags/Windows
       weight: 2
-      parent: software
-    - identifier: software-others
-      name: 其它
-      pageRef: /post/11-mermaid-charts
-      weight: 3
       parent: software
     - identifier: archives
       name: 归档
@@ -239,7 +234,7 @@ params:
   # 需要显示文章的部分，即content目录下的文件夹名称
   # Sections for show in home & archive page 
   # and it's folder name which under content
-  mainSections: ["post", "doc", "life", "private"]
+  mainSections: ["post", "doc", "life", "software"]
   # 年，月，日及时间的格式化样式
   # Format style for year,month,date & time
   yearFormat: "2006"

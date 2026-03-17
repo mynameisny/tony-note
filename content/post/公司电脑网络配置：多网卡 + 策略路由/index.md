@@ -146,7 +146,46 @@ tags:
    default     192.168.66.1   # WiFi网关
    ```
 
+​	
+
+5. 配置DNS：配置 **macOS 的分流 DNS（Split DNS）**，让内网域名走公司的 DNS 服务器，而其他域名走公共 DNS 服务器
+
+   > MacOS支持一个按域名设置 resolver 的功能，它是系统自带的，什么也不用安装，是原生支持的最优雅方案。
+   >
+   > 假设我公司的域名是mycomapny.com，我希望所有这个域的域名都用指定的的DNS服务器，即`*.mycompany.com`（比如web.mycomapny.com或music.mycomapny.com）
+
+   - 创建目录
+
+     ```bash
+     sudo mkdir -p /etc/resolver  # 默认不存在，需要手动创建
+     ```
+
+   - 在`/etc/resolver/mycompany.com`中写入配置
+
+     ```bash
+     cat > /etc/resolver/mycompany.com << EOF
+     nameserver 10.33.176.66
+     nameserver 10.33.176.67
+     EOF
+     ```
+
+     
+
+   - 刷新 DNS 缓存（基实这样就可以了，不需要改系统的 DNS 配置，也不需要重启任何服务，如果不行再执行下面这句）
+
+     ```bash
+     sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder
+     ```
+
+     
+
+   - 验证：可以用 `scutil --dns`进行验证
+
+     > 在 macOS 下，`dig` 和 `nslookup` 等命令并不会遵守 resolver 配置，需要用 `dscacheutil -q host -a name <domain>` 来测试
+
 <br>
+
+
 
 ### Windows
 

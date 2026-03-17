@@ -1,6 +1,6 @@
 ---
 title: "IntellJ IDEA"
-summary: "IDEA常用操作经验分享"
+Summary: "IDEA常用操作经验分享"
 keywords: "IntellJ IDEA"
 
 date: 2026-03-07T23:39:45+08:00

@@ -1,38 +1,131 @@
 ---
 title: "Raycast"
-description: "新置设备：5G CPE 锟鹏C2000 Max"
-keywords: "新置设备：5G CPE 锟鹏C2000 Max"
+Summary: "Raycast是一个macOS上的快速启动器应用，和mac系统自带的启动器Spotlight很像，但是功能远比它的前辈丰富。我们可以通过纯键盘操作，直接在Raycast输入框中调用各种各样的功能。"
+keywords: "Raycast MacOS 快速启动器"
 
-date: 2026-02-07T23:39:45+08:00
-lastmod: 2026-02-07T23:39:45+08:00
+date: 2026-03-23T23:39:45+08:00
+lastmod: 2026-03-23T23:39:45+08:00
 
 categories:
  - 软件
 tags:
-  -
-  -
+  - Raycast
+  - MacOS
+  - 启动器
+  - 效率
+  - 工具
 
-# Post's origin author name
-#author:
-# Post's origin link URL
-#link:
-# Image source link that will use in open graph and twitter card
-#imgs:
-# Expand content on the home page
-#expand: true
-# It's means that will redirecting to external links
-#extlink:
-# Disabled comment plugins in this post
-#comment:
-# enable: false
-# Disable table of content int this post
-# Notice: By default will automatic build table of content 
-# with h2-h4 title in post and without other settings
-#toc: false
-# Absolute link for visit
-#url: "新置设备：5g cpe 锟鹏c2000 max.html"
-# Sticky post set-top in home page and the smaller number will more forward.
-#weight: 1
-# Support Math Formulas render, options: mathjax, katex
-#math: mathjax
 ---
+
+## 执行命令
+
+| 关键词            | 类型        | 含义                  |
+| ----------------- | ----------- | --------------------- |
+| clipboard history | Command     | 打开剪贴板历史        |
+| calendar          | Application | 打开Mac系统的“日历”   |
+| calendar          | Command     | My Schedule，查看日程 |
+| weather           | Application | 打开Mac系统的“天气”   |
+
+
+
+
+
+## 汇率
+
+| 关键词 | 含义                | 示例  |
+| ------ | ------------------- | ----- |
+| 1 cny  | 1人民币兑换多少美元 | $0.15 |
+| 1$     | 1美元兑换多少人民币 | ¥6.89 |
+
+<br>
+
+
+
+## 日期时间
+
+### 基准时间
+
+| 关键词     | 含义         | 示例     |
+| ---------- | ------------ | -------- |
+| today      | 今天         | March 22 |
+| tomorrow   | 明天         | March 23 |
+| yesterday  | 昨天         | March 21 |
+| now        | 当前时间     | 22:26    |
+| this year  | 今年是哪年   | 2026     |
+| this month | 这个月是几月 | March    |
+| this week  | 今天是几号   | March 22 |
+
+<br>
+
+### 时间偏移
+
+| 关键词             | 含义              | 示例     |
+| ------------------ | ----------------- | -------- |
+| 3 days after today | 3天后是几号       | March 25 |
+| 2 week after today | 2周后的今天是几号 | April 5  |
+
+| 关键词      | 含义                      | 示例     |
+| ----------- | ------------------------- | -------- |
+| 1 days ago  | 1天前是几号（不包含今天） | March 21 |
+| 3 days ago  | 3天前是几号（不包含今天） | March 19 |
+| 3 weeks ago | 3周前是几号               | March 1  |
+
+| 关键词         | 含义             | 示例     |
+| -------------- | ---------------- | -------- |
+| next week      | 下周的今天是哪天 | March 29 |
+| next month     | 下个月几月       | April    |
+| next year      | 明年是哪年       | 2027     |
+| next wednesday | 下周三是几号     | March 25 |
+
+| 关键词         | 含义                                                         | 示例     |
+| -------------- | ------------------------------------------------------------ | -------- |
+| last week      | 上周的今天是哪天                                             | March 15 |
+| last month     | 上个月几月                                                   | February |
+| last year      | 去年是哪年                                                   | 2025     |
+| last wednesday | 上周三是几号<br />（一定要注意，老外的一周是周日，如果周日问上周三，其实还是我们的这周三） | March 18 |
+
+<br>
+
+### 时间属性
+
+| 关键词       | 含义                   | 示例 |
+| ------------ | ---------------------- | ---- |
+| day of year  | 今天是一年中的第几天   | 81   |
+| day of month | 今天是一个月中的第几天 | 22   |
+| week of year | 这周是一年中的第几周   | 12   |
+
+<br>
+
+### 时间差/计算
+
+| 关键词                 | 含义                   | 示例                |
+| ---------------------- | ---------------------- | ------------------- |
+| now + 15min            | 15分钟后               | 23:47               |
+| now + 3 hours          | 3小时后                | Tomorrow at 02:34   |
+| today 18:00 - now      | 距离18点过了多久       | 5 hours 34 min 48 s |
+| 2026-12-25 - today     | 距离圣诞还有多少天     | 9 months 2 days     |
+| now until 23:50        | 现在距离23:50还有多久  | 4 min 27 s          |
+| today until 2026-04-05 | 今天距离4月5号还有多久 | 1 week 6 days       |
+
+<br>
+
+### 格式化
+
+| 关键词              | 含义                     | 示例                      |
+| ------------------- | ------------------------ | ------------------------- |
+| today in yyyy-MM-dd | 按年-月-日格式化         | 2026-03-23                |
+| today in MM/dd/yyyy | 按月/日/年格式化         | 03/23/2026                |
+| now in HH:mm        | 按小时分钟显示当前时间   | 23:38                     |
+| now in HH:mm:ss     | 按小时分钟秒显示当前时间 | 23:38:42                  |
+| now in ISO          | 按ISO格式显示当前时间    | 2026-03-23T23:39:36+08:00 |
+
+
+
+
+
+
+
+
+
+
+

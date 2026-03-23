@@ -21,12 +21,27 @@ tags:
 
 | 关键词            | 类型        | 含义                  |
 | ----------------- | ----------- | --------------------- |
+| store             | Command     | 打开Raycast的应用商店 |
 | clipboard history | Command     | 打开剪贴板历史        |
 | calendar          | Application | 打开Mac系统的“日历”   |
 | calendar          | Command     | My Schedule，查看日程 |
 | weather           | Application | 打开Mac系统的“天气”   |
 
+<br>
 
+
+
+## 窗口管理
+
+| 关键词            | 类型              | 含义                             |
+| ----------------- | ----------------- | -------------------------------- |
+| left half         | Window Management | 保留左半边窗口（Maximize可恢复） |
+| right half        | Window Management | 保留右半边窗口（Maximize可恢复） |
+| Top half          | Window Management | 保留上半边窗口（Maximize可恢复） |
+| bottom half       | Window Management | 保留下半边窗口（Maximize可恢复） |
+| Maximize Weight   | Window Management | 全宽                             |
+| Maximize Height   | Window Management | 全高                             |
+| Toggle Fullscreen | Window Management | 全屏（Maximize可恢复）           |
 
 
 
@@ -38,6 +53,16 @@ tags:
 | 1$     | 1美元兑换多少人民币 | ¥6.89 |
 
 <br>
+
+
+
+## 计量单位
+
+| 关键词   | 含义           | 示例                 |
+| -------- | -------------- | -------------------- |
+| 0.75kg   | 0.75kg是多少磅 | 1.6534669664 lb      |
+| 1oz to g | 1盎司是多少克  | 28.349523125 g       |
+| 1t to oz | 1吨是多少盎司  | 35,273.9619495804 oz |
 
 
 
@@ -118,12 +143,36 @@ tags:
 | now in HH:mm        | 按小时分钟显示当前时间   | 23:38                     |
 | now in HH:mm:ss     | 按小时分钟秒显示当前时间 | 23:38:42                  |
 | now in ISO          | 按ISO格式显示当前时间    | 2026-03-23T23:39:36+08:00 |
+| now in utc          | 按UTC格式显示当前时间    | March 23, 2026 at 16:44   |
+
+<br>
 
 
 
+### 时区
+
+| 关键词        | 含义           | 示例                    |
+| ------------- | -------------- | ----------------------- |
+| now in tokyo  | 东京现在是几点 | 01:14                   |
+| now in London | 伦敦现在是几点 | March 23, 2026 at 16:15 |
 
 
 
+## 插件
+
+- ### Kill Process: 一键关闭进程
+
+- ### ray.so: 一键生成代码块
+
+- ### Honorable Mention - Year in Progress: 年进度
+
+
+
+## 娱乐
+
+| 关键词   | 类型    | 含义                                                         |
+| -------- | ------- | ------------------------------------------------------------ |
+| Confetti | Command | 屏幕上播放礼花动画<br />可以在终端中执行这个Deeplink：`open raycast://extensions/raycast/raycast/confetti`，或者将这个deeplink加入到`post-commit`的Git钩子中，这样每次完成commit都会播放一次礼花动画 |
 
 
 

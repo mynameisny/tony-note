@@ -14,7 +14,6 @@ tags:
   - 启动器
   - 效率
   - 工具
-
 ---
 
 ## 执行命令
@@ -31,6 +30,19 @@ tags:
 
 
 
+## 代码片段
+
+- 新建：打开 Raycast → 输入 `Snippets`，选择`Create Snippets`
+- 删除：打开 Raycast → 输入 `Snippets`，选择`Search Snippets`，选中想要删除的脚本，用快捷键`Cmd + k`呼出菜单后，选择`Delete Snippet`
+
+| 名称（Name）   | 内容（Snippet）                 | 关键词（Keyword） |
+| -------------- | ------------------------------- | ----------------- |
+| 输入今天的日期 | {date format="yyyy-MM-dd EEEE"} | ;today            |
+
+<br>
+
+
+
 ## 窗口管理
 
 | 关键词            | 类型              | 含义                             |
@@ -42,6 +54,8 @@ tags:
 | Maximize Weight   | Window Management | 全宽                             |
 | Maximize Height   | Window Management | 全高                             |
 | Toggle Fullscreen | Window Management | 全屏（Maximize可恢复）           |
+
+<br>
 
 
 
@@ -64,6 +78,8 @@ tags:
 | 1oz to g | 1盎司是多少克  | 28.349523125 g       |
 | 1t to oz | 1吨是多少盎司  | 35,273.9619495804 oz |
 
+<br>
+
 
 
 ## 日期时间
@@ -80,7 +96,7 @@ tags:
 | this month | 这个月是几月 | March    |
 | this week  | 今天是几号   | March 22 |
 
-<br>
+
 
 ### 时间偏移
 
@@ -109,7 +125,7 @@ tags:
 | last year      | 去年是哪年                                                   | 2025     |
 | last wednesday | 上周三是几号<br />（一定要注意，老外的一周是周日，如果周日问上周三，其实还是我们的这周三） | March 18 |
 
-<br>
+
 
 ### 时间属性
 
@@ -119,7 +135,7 @@ tags:
 | day of month | 今天是一个月中的第几天 | 22   |
 | week of year | 这周是一年中的第几周   | 12   |
 
-<br>
+
 
 ### 时间差/计算
 
@@ -132,20 +148,19 @@ tags:
 | now until 23:50        | 现在距离23:50还有多久  | 4 min 27 s          |
 | today until 2026-04-05 | 今天距离4月5号还有多久 | 1 week 6 days       |
 
-<br>
+
 
 ### 格式化
 
-| 关键词              | 含义                     | 示例                      |
-| ------------------- | ------------------------ | ------------------------- |
-| today in yyyy-MM-dd | 按年-月-日格式化         | 2026-03-23                |
-| today in MM/dd/yyyy | 按月/日/年格式化         | 03/23/2026                |
-| now in HH:mm        | 按小时分钟显示当前时间   | 23:38                     |
-| now in HH:mm:ss     | 按小时分钟秒显示当前时间 | 23:38:42                  |
-| now in ISO          | 按ISO格式显示当前时间    | 2026-03-23T23:39:36+08:00 |
-| now in utc          | 按UTC格式显示当前时间    | March 23, 2026 at 16:44   |
-
-<br>
+| 关键词                   | 含义                      | 示例                      |
+| ------------------------ | ------------------------- | ------------------------- |
+| today in yyyy-MM-dd      | 按”年-月-日“格式化        | 2026-03-23                |
+| today in MM/dd/yyyy      | 按“月/日/年”格式化        | 03/23/2026                |
+| today in yyyy-MM-dd EEEE | 按“年-月-日 星期几”格式化 | 2026-03-24 Tuesday        |
+| now in HH:mm             | 按小时分钟显示当前时间    | 23:38                     |
+| now in HH:mm:ss          | 按小时分钟秒显示当前时间  | 23:38:42                  |
+| now in ISO               | 按ISO格式显示当前时间     | 2026-03-23T23:39:36+08:00 |
+| now in utc               | 按UTC格式显示当前时间     | March 23, 2026 at 16:44   |
 
 
 
@@ -156,15 +171,19 @@ tags:
 | now in tokyo  | 东京现在是几点 | 01:14                   |
 | now in London | 伦敦现在是几点 | March 23, 2026 at 16:15 |
 
+<br>
+
 
 
 ## 插件
 
-- ### Kill Process: 一键关闭进程
+- Kill Process: 一键关闭进程
 
-- ### ray.so: 一键生成代码块
+- ray.so: 一键生成代码块
 
-- ### Honorable Mention - Year in Progress: 年进度
+- Honorable Mention - Year in Progress: 年进度
+
+<br>
 
 
 

@@ -14,29 +14,6 @@ tags:
   - GitHub Actions
   - VPS
 
-# Post's origin author name
-#author:
-# Post's origin link URL
-#link:
-# Image source link that will use in open graph and twitter card
-#imgs:
-# Expand content on the home page
-#expand: true
-# It's means that will redirecting to external links
-#extlink:
-# Disabled comment plugins in this post
-#comment:
-# enable: false
-# Disable table of content int this post
-# Notice: By default will automatic build table of content 
-# with h2-h4 title in post and without other settings
-#toc: false
-# Absolute link for visit
-#url: "通过github actions自动部署hugo博客到vps.html"
-# Sticky post set-top in home page and the smaller number will more forward.
-#weight: 1
-# Support Math Formulas render, options: mathjax, katex
-#math: mathjax
 ---
 
 我的博客基于Hugo搭建，源码都保存在GitHub，通过GitHub Actions，在收到main分支变化事件时，自动构建Hugo源码，生成可部署的分发文件，部署到我远程VPS的Nginx Web目录（Nginx是Docker容器方式运行）。
@@ -130,6 +107,7 @@ ssh -i id_ed25519 root@your-vps-ip
 - VPS_PORT：SSH端口
 - VPS_SSH_KEY：私钥，**注意不是公钥**，即上面生成的`id_ed25519` 文件内容（包含 BEGIN / END）⚠️ 不要加多余空格
 - VPS_USER：登陆VPS时的SSH用户名
+- BARK_URL：Bark的推送地址
 
 ![image-20260128001825214](./assets/image-20260128001825214.png)
 
@@ -178,6 +156,11 @@ jobs:
             -e "ssh -p ${{ secrets.VPS_PORT }}" \
             public/ \
             ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }}:/home/nginx/html
+
+      - name: Notify via Bark
+        if: success()
+        run: |
+          curl "${{ secrets.BARK_URL }}/✅%20Hugo部署成功/仓库:${{ github.repository }}🚀"
 ```
 
 <br>

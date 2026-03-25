@@ -32,7 +32,11 @@ tags:
 
 - https://note.ningyu.me/software/raycast/
 
+<img src="./assets/image-20260325143625345.png" alt="image-20260325143625345" style="zoom:50%;" />
+
 <br>
+
+
 
 ### [Mac Mouse Fix](https://macmousefix.com/)
 
@@ -40,7 +44,9 @@ tags:
 
 - TODO
 
-  
+<img src="./assets/image-20260325143934363.png" alt="image-20260325143934363" style="zoom:50%;" />
+
+<br>
 
 
 

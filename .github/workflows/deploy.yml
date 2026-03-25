@@ -38,3 +38,8 @@ jobs:
             -e "ssh -p ${{ secrets.VPS_PORT }}" \
             public/ \
             ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }}:/home/nginx/html
+
+      - name: Notify via Bark
+        if: success()
+        run: |
+          curl "${{ secrets.BARK_URL }}/✅%20Hugo部署成功/仓库:${{ github.repository }}🚀"

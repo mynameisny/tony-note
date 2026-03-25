@@ -1,5 +1,6 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
+summary: "{{ .Name }}"
 description: "{{ .Name }}"
 keywords: "{{replace .Name "-" ","}}"
 

@@ -1,6 +1,6 @@
 ---
 title: "Raycast"
-Summary: "Raycast是一个macOS上的快速启动器应用，和mac系统自带的启动器Spotlight很像，但是功能远比它的前辈丰富。我们可以通过纯键盘操作，直接在Raycast输入框中调用各种各样的功能。"
+summary: "Raycast是一个macOS上的快速启动器应用，和mac系统自带的启动器Spotlight很像，但是功能远比它的前辈丰富。我们可以通过纯键盘操作，直接在Raycast输入框中调用各种各样的功能。"
 keywords: "Raycast MacOS 快速启动器"
 
 date: 2026-03-23T23:39:45+08:00

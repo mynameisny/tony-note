@@ -20,7 +20,9 @@ tags:
 
 Confetti [kənˈfeti]：五彩纸屑
 
-Raycast Confetti‌ 是 Raycast 应用中的一个趣味功能，用于在完成特定任务或达成目标时触发全屏撒花动画，以示庆祝。可以在终端中通过执行它的 **Deeplink** 来触发：`raycast://extensions/raycast/raycast/confetti`
+Raycast Confetti‌ 是 Raycast 应用中的一个趣味功能，用于在完成特定任务或达成目标时触发全屏撒花动画，以示庆祝。
+
+可以在终端中通过执行它的 **Deeplink** 来触发：`open raycast://extensions/raycast/raycast/confetti`
 
 <br>
 
@@ -91,6 +93,8 @@ git pushf origin main
 git push origin main
 ```
 
+<br>
+
 
 
 ##### 2️⃣ 判断 push 是否成功
@@ -103,6 +107,8 @@ if [ $? -eq 0 ]; then
 
 - `$?` = 上一条命令的**退出码（exit code）**
 - `0` 表示成功，非 0 表示失败
+
+<br>
 
 
 
@@ -119,6 +125,8 @@ open "raycast://confetti";
 say "Push successful";
 ```
 
+<br>
+
 
 
 ##### 4️⃣ 失败时执行的逻辑
@@ -130,6 +138,8 @@ else
   echo "💥 Push 失败"; 
 fi
 ```
+
+<br>
 
 
 

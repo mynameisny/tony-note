@@ -20,6 +20,8 @@ tags:
 
 > Homebrew 是适用于 macOS 和 Linux 的开源软件包管理器，通过简洁的命令行界面让用户能够轻松安装、更新和管理开发工具及应用程序。
 
+<img src="./assets/image-20260325140033407.png" alt="image-20260325140033407" style="zoom:50%;" />
+
 - TODO
 
 <br>

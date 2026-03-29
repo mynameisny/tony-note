@@ -32,9 +32,9 @@ alias typora="open -a Typora"
 source ~/.zshrc
 ```
 
-### 
 
-使用
+
+使用方法
 
 ```bash
 typora README.md

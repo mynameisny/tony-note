@@ -11,6 +11,7 @@ categories:
 tags:
   - Software
   - 软件推荐
+weight: 1
 
 ---
 
@@ -63,6 +64,14 @@ tags:
 
 <br>
 
+### Typora
+
+> 是一款「所见即所得」的极简 Markdown 编辑器，以实时渲染预览、沉浸式写作界面、原生支持图表/公式/表格及多平台导出为核心，帮助作者、开发者与技术写作者在专注流畅的编辑体验中高效完成文档创作。
+
+- https://note.ningyu.me/software/typora/
+
+<br>
+
 
 
 ### [MyZIP](https://apps.apple.com/cn/app/myzip-%E4%BC%98%E7%A7%80%E5%85%A8%E8%83%BD%E7%9A%84%E5%A4%9A%E7%BA%BF%E7%A8%8B%E6%9E%81%E9%80%9F%E5%8E%8B%E7%BC%A9%E5%B7%A5%E5%85%B7/id1533074588?mt=12)
@@ -91,6 +100,30 @@ tags:
 
 
 
+### [Itsycal](https://www.mowglii.com/itsycal/)
+
+> 111
+
+<br>
+
+
+
+### [Keycastr](https://github.com/keycastr/keycastr)
+
+> 111
+
+<br>
+
+
+
+### Moonlight
+
+> 222
+
+<br>
+
+
+
 ### [Windows App](https://apps.apple.com/us/app/windows-app/id1295203466?mt=12)
 
 > 微软的 **Windows App**（原名 Microsoft Remote Desktop），它是一款适用于 macOS 的官方远程桌面客户端，作为统一网关让用户能够安全、便捷地从 Mac 连接到 Windows 365、Azure 虚拟桌面、Microsoft Dev Box 及远程物理电脑。
@@ -104,6 +137,18 @@ tags:
 > JetBrains 出品的一款智能 Java/Kotlin 集成开发环境（IDE），以深度代码理解、智能重构、开箱即用的框架支持及丰富的插件生态为核心，为 JVM 平台开发者提供高效、精准且流畅的全栈编码体验。
 
 - https://ckey.run/
+
+<br>
+
+### Navicat
+
+> 222
+
+<br>
+
+### Tabby
+
+> 333
 
 <br>
 
@@ -198,6 +243,20 @@ tags:
 - 11
 
 <br>
+
+### Snipaste
+
+> 222
+
+<br>
+
+### SwitchHosts
+
+> 333
+
+<br>
+
+
 
 
 

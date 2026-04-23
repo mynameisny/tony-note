@@ -12,6 +12,7 @@ categories:
 tags:
   - 软件
   - Software
+  - Typora
 ---
 
 ### 在终端中用Typora打开文件
@@ -32,6 +33,10 @@ alias typora="open -a Typora"
 source ~/.zshrc
 ```
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> c32c18c (新增文章)
 
 
 使用方法

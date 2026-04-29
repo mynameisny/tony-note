@@ -1,6 +1,6 @@
 ---
 title: "笔记本电脑同时连接2个WiFi上网"
-description: "笔记本电脑同时连接2个WiFi上网"
+summary: "我在工位用笔记本电脑连接内网可以访问到公司10.*和11.*的内网资源，但是无法使用全功能的连接外网，于是我在笔记本上插了一个外接的绿联USB无线网卡，实现用自带的无线网卡，连接内网Wi-Fi；用外接USB网卡，连接个人的热点Wi-Fi。避免了频繁手工切换Wi-Fi的麻烦。本文介绍**双无线网卡同时工作**，分别连接不同WiFi网络的配置方法。"
 keywords: "笔记本电脑同时连接2个WiFi上网"
 
 date: 2026-04-23T16:06:33+08:00
@@ -10,14 +10,17 @@ categories:
  - 经验技巧
 tags:
   - 网络
-  - WIFI
+  - IP地址
+  - 路由
+  - 网关
+  - 代理
+  - MacOS
+  - Windows
 ---
-
-我在工位用笔记本电脑连接内网可以访问到公司10.*和11.*的内网资源，但是无法使用全功能的连接外网，于是我在笔记本上插了一个外接的绿联USB无线网卡，实现用自带的无线网卡，连接内网Wi-Fi；用外接USB网卡，连接个人的热点Wi-Fi。避免了频繁手工切换Wi-Fi的麻烦。本文介绍**双无线网卡同时工作**，分别连接不同WiFi网络的配置方法。
 
 > 文中所有的命令必须以**管理员身份**打开CMD或PowerShell执行，确保有足够的权限。
 
-
+<br>
 
 ### 连接Wi-Fi
 
@@ -31,7 +34,7 @@ tags:
 
 
 
-
+<br>
 
 打开“网络连接”（可使用`ncpa.cpl`命令），查看IP地址分配情况：
 
@@ -72,7 +75,9 @@ Interface List
 ===========================================================================
 ```
 
+<br>
 
+<br>
 
 ### 删除内网的默认网关
 
@@ -86,7 +91,9 @@ route delete 0.0.0.0 mask 0.0.0.0 11.2.14.1
 route print -4 | findstr "0.0.0.0"
 ```
 
+<br>
 
+<br>
 
 ### 添加内网网段路由
 
@@ -98,7 +105,9 @@ route add 10.0.0.0 mask 255.0.0.0 11.2.14.1 metric 50 if 16
 route add 11.0.0.0 mask 255.0.0.0 11.2.14.1 metric 50 if 16
 ```
 
+<br>
 
+<br>
 
 ### 处理DHCP分配的默认网关冲突
 
@@ -160,9 +169,98 @@ Persistent Routes:
   None
 ```
 
+<br>
 
+<br>
 
+### Windows CMD脚本
 
+> 保存为config_route.bat，右键以管理员身份运行
+
+```
+@echo off
+setlocal enabledelayedexpansion
+chcp 65001 >nul 2>nul
+
+echo ════════════════════════════════════════════════
+echo   🔄 内外网路由配置脚本 (CMD版)
+echo   ⚠️  必须以【管理员身份】运行！
+echo ════════════════════════════════════════════════
+echo.
+
+:: ── 检查管理员权限 ──────────────────────────────
+net session >nul 2>&1
+if %errorlevel% neq 0 (
+    echo [错误] 请右键脚本 → 选择【以管理员身份运行】
+    pause & exit /b 1
+)
+
+:: ── 步骤1: 删除默认路由 ─────────────────────────
+echo [1/5] 删除默认路由 0.0.0.0/0 ...
+route delete 0.0.0.0 mask 0.0.0.0 11.2.14.1 >nul 2>&1
+echo     ✅ 执行完成
+echo.
+
+:: ── 步骤2: 获取网卡接口编号 (安全解析) ───────────
+echo [2/5] 自动识别 Intel AX211 接口编号...
+set "IF_NUM="
+
+for /f "tokens=1 delims=." %%A in ('route print -4 ^| find /i "AX211"') do (
+    if "!IF_NUM!"=="" set "IF_NUM=%%A"
+)
+
+if "!IF_NUM!"=="" (
+    echo     ⚠️  未自动匹配到 AX211，请查看下方列表:
+    route print -4 | find /i "Wi-Fi"
+    echo.
+    set /p "IF_NUM=请手动输入接口编号(如 15): "
+    if "!IF_NUM!"=="" (
+        echo [错误] 未输入编号，脚本终止
+        exit /b 1
+    )
+)
+echo     ✅ 接口编号: !IF_NUM!
+echo.
+
+:: ── 步骤3: 添加 10.0.0.0/8 路由 ──────────────────
+echo [3/5] 配置 10.0.0.0/8 路由...
+route delete 10.0.0.0 mask 255.0.0.0 >nul 2>&1
+route add 10.0.0.0 mask 255.0.0.0 11.2.14.1 metric 10 if !IF_NUM! >nul 2>&1
+if !errorlevel! equ 0 (echo     ✅ 路由添加成功) else (echo     ❌ 添加失败，错误码 !errorlevel!)
+echo.
+
+:: ── 步骤4: 添加 11.0.0.0/8 路由 ──────────────────
+echo [4/5] 配置 11.0.0.0/8 路由...
+route delete 11.0.0.0 mask 255.0.0.0 >nul 2>&1
+route add 11.0.0.0 mask 255.0.0.0 11.2.14.1 metric 10 if !IF_NUM! >nul 2>&1
+if !errorlevel! equ 0 (echo     ✅ 路由添加成功) else (echo     ❌ 添加失败，错误码 !errorlevel!)
+echo.
+
+:: ── 步骤5: 验证网络连通性 ───────────────────────
+echo [5/5] 验证访问 www.portal.dcloud.cnpc ...
+curl -s -m 10 -I http://www.portal.dcloud.cnpc >nul 2>&1
+if !errorlevel! equ 0 (
+    echo     🎉 验证成功！内外网路由已生效
+) else (
+    echo     ⚠️  直接访问失败，尝试基础连通性测试:
+    ping -n 1 www.portal.dcloud.cnpc
+)
+
+echo.
+echo ════════════════════════════════════════════════
+echo   📋 当前生效的关键路由:
+:: ✅ 修复点：改为匹配【目标网段 + 网关】，避开接口编号显示差异
+route print -4 | findstr /C:"10.0.0.0" /C:"11.0.0.0" | findstr /C:"11.2.14.1"
+if !errorlevel! neq 0 echo     (未找到对应路由，请手动执行 route print -4 检查)
+echo ════════════════════════════════════════════════
+echo.
+echo 💡 提示:
+echo   • 重启后失效？将 route add 改为 route add -p 可永久生效
+echo   • 恢复默认：route delete 10.0.0.0 mask 255.0.0.0
+echo   • 恢复默认：route delete 11.0.0.0 mask 255.0.0.0
+echo.
+pause
+```
 
 
 
